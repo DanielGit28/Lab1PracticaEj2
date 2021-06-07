@@ -5,13 +5,22 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main_Metodo_Fabrica {
-    private static Gestor gGestor = new Gestor();
+    private static cr.ac.ucenfotec.ej2.principal.Gestor gGestor = new Gestor();
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         ejecutarPrograma();
     }
 
+    /************************************************************
+     * Metodo:		ejecutarPrograma
+     *
+     * Descripción:	Esta funcion ejecuta el programa con el menú.
+     *
+     * Parametros:
+     *
+     * @return:		N/A
+     *************************************************************/
     public static void ejecutarPrograma(){
         int opcion = 0;
         do {
@@ -19,15 +28,22 @@ public class Main_Metodo_Fabrica {
             opcion = scanner.nextInt();
             try {
                 ejecutarOpcion(opcion);
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
             } catch(InputMismatchException e) {
                 System.out.println("No ingreso ningún valor o presionó el botón de enter varias veces");
             }
         } while (opcion != 6);
     }
 
-    private static void ejecutarOpcion(int opcion) throws SQLException {
+    /************************************************************
+     * Metodo:		ejecutarOpcion
+     *
+     * Descripción:	Esta funcion ejecuta las opciones del menú.
+     *
+     * Parametros: opcion [int]
+     *
+     * @return:		N/A
+     *************************************************************/
+    private static void ejecutarOpcion(int opcion) {
         switch (opcion){
             case 1:
                 gGestor.nuevoMilitante("Piloto");
@@ -55,10 +71,9 @@ public class Main_Metodo_Fabrica {
     }
 
     /************************************************************
-     * Metodo:		imprimir
+     * Metodo:		mostrarMenu
      *
-     * Descripción:	Esta funcion imprime los datos de un objeto
-     * 				de tipo militante.
+     * Descripción:	Esta funcion imprime los datos del menu del programa.
      *
      * Parametros:
      *
