@@ -8,7 +8,7 @@ import cr.ac.ucenfotec.ej2.producto_concreto.Infanteria;
 import cr.ac.ucenfotec.ej2.producto_concreto.Piloto;
 
 public class Fabrica_Militantes implements Metodo_Fabrica_Abstracta {
-    /****************** SECCION: Implementación de las funciones abstractas *******************/
+    /**--Implementacion de funciones abstractas--**/
     @Override
     public Militante crearMilitante(String militante) {
 

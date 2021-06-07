@@ -7,7 +7,7 @@ public abstract class Militante {
     private int estamina;
     private int curacion;
 
-    /****-CONSTRUCTORES-***/
+    /**-CONSTRUCTORES-**/
     public Militante(String nombre, int ataque, int defensa, int estamina, int curacion) {
         this.nombre = nombre;
         this.ataque = ataque;
@@ -24,7 +24,7 @@ public abstract class Militante {
         setNombre("Militante");
     }
 
-    /****--GETS--******/
+    /**--GETS--**/
     public String getNombre() {
         return nombre;
     }
@@ -41,7 +41,7 @@ public abstract class Militante {
     public int getCuracion() {
         return curacion;
     }
-    /****--SETS--******/
+    /**--SETS--**/
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }

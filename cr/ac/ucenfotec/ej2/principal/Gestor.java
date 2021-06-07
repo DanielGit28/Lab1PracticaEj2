@@ -28,7 +28,7 @@ public class Gestor {
     /************************************************************
      * Metodo:		add_objeto_array
      *
-     * Descripción:	Recibe un nuevo objeto y lo guarda en el array.
+     * Descripción:	Recibe un nuevo objeto y lo guarda en el array de militantes.
      *
      * Parametros:	pObj [Militante]
      *
